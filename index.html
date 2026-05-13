@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="page-intro">
+        <div class="intro-overlay"></div>
+
+        <div class="intro-content">
+            <p class="intro-subtitle">Uma mensagem especial</p>
+            <h1 class="intro-title">Para Você</h1>
+            <div class="gold-line"></div>
+            <button class="btn-enter" onclick="enterSite()">Abrir ✦</button>
+        </div>
+    </div>
+
+    <div id="page-main">
+        <nav id="navbar">
+            <span class="nav-logo">♡</span>
+            <ul class="nav-links">
+                <li><a href="#carta">Carta</a></li>
+                <li><a href="#memorias">Memórias</a></li>
+                <li><a href="#frases">Frases</a></li>
+                <li><a href="#nos">Nós</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <p class="hero-ornament">✦ &nbsp; Com todo o meu amor &nbsp; ✦</p>
+            <h1>Meu <span>Amor</span></h1>
+            <p class="hero-desc">Cada página deste site é feita com carinho para você. Porque você merece saber o quanto é especial para mim.</p>
+            <div class="gold-line" style="width: 200px;"></div>
+        </div>
+
+        <section id="carta" class="fade-in">
+            <p class="section-label">✦ Palavras do coração</p>
+            <h2 class="section-title">Carta de Amor</h2>
+            <div class="divider"></div>
+            <div class="letter-card">
+                <div class="letter-text">
+                    <p>Meu amor,</p>
+                    <p>Existem momentos na vida em que as palavras não são suficientes para expressar o que o coração sente. Mas eu precisava tentar, porque você merece saber o quanto é importante para mim.</p>
+                    <p>Desde que você entrou na minha vida, tudo ficou mais bonito. Você me faz querer ser uma pessoa melhor a cada dia. O seu sorriso é capaz de iluminar os dias mais cinzas, e os seus olhos guardam um mundo que eu quero explorar para sempre.</p>
+                    <p>Cada memória que construímos juntos é um tesouro que guardo com o maior cuidado. E cada dia que passa, tenho mais certeza: quero construir muitas outras histórias ao seu lado.</p>
+                    <p>Obrigado por existir. Obrigado por ser você.</p>
+                </div>
+                <div class="letter-signature">Com todo o meu amor ♡</div>
+            </div>
+        </section>
+
+        <section id="memorias" class="fade-in">
+            <p class="section-label">✦ Momentos inesquecíveis</p>
+            <h2 class="section-title">Nossas Memórias</h2>
+            <div class="divider"></div>
+            <p style="font-family:'Montserrat',sans-serif; font-size:12px; letter-spacing:2px; color:rgba(201,168,76,0.5); margin-bottom:32px; text-transform:uppercase;">Clique nas fotos para adicionar suas memórias</p>
+            <div class="photos-grid" id="photosGrid"></div>
+        </section>
+
+        <section id="frases" class="fade-in">
+            <p class="section-label">✦ Palavras bonitas</p>
+            <h2 class="section-title">Frases Para Você</h2>
+            <div class="divider"></div>
+            <div class="quotes-grid">
+                <div class="quote-card"><p class="quote-text">"Você é o lar que eu sempre quis encontrar. O lugar onde me sinto completo."</p><p class="quote-author">— Só para você</p></div>
+                <div class="quote-card"><p class="quote-text">"Nos seus olhos, encontrei a calma que o meu coração tanto buscava."</p><p class="quote-author">— Com amor</p></div>
+                <div class="quote-card"><p class="quote-text">"Amar você não é uma escolha. É a coisa mais natural do mundo."</p><p class="quote-author">— Sempre</p></div>
+                <div class="quote-card"><p class="quote-text">"Cada segundo ao seu lado vale mais do que uma vida inteira sem você."</p><p class="quote-author">— Para sempre</p></div>
+                <div class="quote-card"><p class="quote-text">"Você me fez acreditar que o amor mais bonito é aquele que cresce todos os dias."</p><p class="quote-author">— De todo coração</p></div>
+                <div class="quote-card"><p class="quote-text">"O mundo fica mais bonito quando você está perto. E faz falta quando não está."</p><p class="quote-author">— Saudades de você</p></div>
+            </div>
+        </section>
+
+        <section id="nos" class="fade-in">
+            <p class="section-label">✦ Nossa história</p>
+            <h2 class="section-title">Nós Dois</h2>
+            <div class="divider"></div>
+            <div class="counter-box">
+                <div class="counter-number" id="daysCount">0</div>
+                <div class="counter-label">dias juntos e contando</div>
+                <div class="counter-date">
+                    Desde: <input type="date" id="dateInput" onchange="updateCounter()" title="Data de início">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <span class="heart">♡</span>
+            <p>Feito com amor, só para você.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
