@@ -10,8 +10,6 @@
 <body>
 
     <div id="page-intro">
-        <div class="intro-overlay"></div>
-
         <div class="intro-content">
             <p class="intro-subtitle">Uma mensagem especial</p>
             <h1 class="intro-title">Para Você</h1>
@@ -26,7 +24,6 @@
             <ul class="nav-links">
                 <li><a href="#carta">Carta</a></li>
                 <li><a href="#memorias">Memórias</a></li>
-                <li><a href="#frases">Frases</a></li>
                 <li><a href="#nos">Nós</a></li>
             </ul>
         </nav>
@@ -55,36 +52,31 @@
         </section>
 
         <section id="memorias" class="fade-in">
-            <p class="section-label">✦ Momentos inesquecíveis</p>
+            <p class="section-label">✦ Galeria Particular</p>
             <h2 class="section-title">Nossas Memórias</h2>
             <div class="divider"></div>
-            <p style="font-family:'Montserrat',sans-serif; font-size:12px; letter-spacing:2px; color:rgba(201,168,76,0.5); margin-bottom:32px; text-transform:uppercase;">Clique nas fotos para adicionar suas memórias</p>
-            <div class="photos-grid" id="photosGrid"></div>
-        </section>
-
-        <section id="frases" class="fade-in">
-            <p class="section-label">✦ Palavras bonitas</p>
-            <h2 class="section-title">Frases Para Você</h2>
-            <div class="divider"></div>
-            <div class="quotes-grid">
-                <div class="quote-card"><p class="quote-text">"Você é o lar que eu sempre quis encontrar. O lugar onde me sinto completo."</p><p class="quote-author">— Só para você</p></div>
-                <div class="quote-card"><p class="quote-text">"Nos seus olhos, encontrei a calma que o meu coração tanto buscava."</p><p class="quote-author">— Com amor</p></div>
-                <div class="quote-card"><p class="quote-text">"Amar você não é uma escolha. É a coisa mais natural do mundo."</p><p class="quote-author">— Sempre</p></div>
-                <div class="quote-card"><p class="quote-text">"Cada segundo ao seu lado vale mais do que uma vida inteira sem você."</p><p class="quote-author">— Para sempre</p></div>
-                <div class="quote-card"><p class="quote-text">"Você me fez acreditar que o amor mais bonito é aquele que cresce todos os dias."</p><p class="quote-author">— De todo coração</p></div>
-                <div class="quote-card"><p class="quote-text">"O mundo fica mais bonito quando você está perto. E faz falta quando não está."</p><p class="quote-author">— Saudades de você</p></div>
+            <div class="photos-grid">
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.23 (2).jpeg"></div>
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.29.jpeg"></div>
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.24 (1).jpeg"></div>
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.25 (3).jpeg"></div>
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.29 (1).jpeg"></div>
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.30.jpeg"></div>
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.22 (3).jpeg"></div>
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.28.jpeg"></div>
+                <div class="photo-slot"><img src="imagens/WhatsApp Image 2026-05-13 at 15.51.28 (2).jpeg"></div>
             </div>
         </section>
 
         <section id="nos" class="fade-in">
-            <p class="section-label">✦ Nossa história</p>
+            <p class="section-label">✦ O tempo para nós</p>
             <h2 class="section-title">Nós Dois</h2>
             <div class="divider"></div>
             <div class="counter-box">
                 <div class="counter-number" id="daysCount">0</div>
                 <div class="counter-label">dias juntos e contando</div>
                 <div class="counter-date">
-                    Desde: <input type="date" id="dateInput" onchange="updateCounter()" title="Data de início">
+                    Desde: <input type="date" id="dateInput" value="2025-12-27" onchange="updateCounter()" title="Data de início">
                 </div>
             </div>
         </section>
